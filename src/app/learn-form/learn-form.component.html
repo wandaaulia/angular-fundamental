@@ -1,0 +1,53 @@
+
+
+<div class="container">
+    <div>
+        <h2> Personal Form using ngForm </h2>
+        <form (ngSubmit)="onSubmit()" #personalForm="ngForm">
+                <div class="form-group">
+                    <label for="name"> Name </label>
+                    <input type="text" class="form-control" name="name" id="name" [(ngModel)]="formPerson.name" required #name="ngModel" >
+                    <div [hidden]="name.valid || name.pristine" class="alert alert-danger mt-5">
+                        Name is required
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject"> Favorite Subject </label>
+                    <input type="text" class="form-control" name="subject" id="subject" [(ngModel)]="formPerson.subject" required #subject="ngModel">
+                    <div [hidden]="subject.valid || subject.pristine" class="alert alert-danger">
+                        Subject is required
+                    </div> 
+                </div>
+
+                <div class="form-group">
+                    <label for="className"> Class Name </label> 
+                    <select name="className" id="className" class="form-control" [(ngModel)]="formPerson.className" required #className="ngModel">
+                        <option *ngFor="let c of allClass" [value]="c"> {{c}} </option>
+                    </select>
+                    <div [hidden]="className.valid || className.pristine" class="alert alert-danger">
+                        Class Name is required
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success" [disabled]="!personalForm.form.valid"> Submit</button>
+                <button type="button" class="btn btn-default" (click)="personalForm.reset()"> Reset </button>
+        </form>
+    </div>
+
+    <div>
+        <h2> Result : </h2>
+        <div>
+            <h4> Name : </h4>
+            <p> {{formPerson.name}} </p>
+        </div>
+        <div>
+            <h4> Fav Subject : </h4>
+            <p> {{formPerson.subject}} </p>
+        </div>
+        <div>
+            <h4> Class Name : </h4>
+            <p> {{formPerson.className}} </p>
+        </div>
+    </div>
+</div>

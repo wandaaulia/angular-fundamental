@@ -1,0 +1,8 @@
+<div style="margin-top: 20px"> 
+    <p> Login </p>
+    <p> {{message}} </p>
+    <p>
+        <button *ngIf="!authService.isLoggedIn" style="background-color: lightblue; border: none; color: white" (click)="login()"> Login </button> 
+        <button *ngIf="authService.isLoggedIn" style="background-color: lightblue; border: none; color: white" (click)="logout()"> Logout </button> 
+    </p>
+</div>

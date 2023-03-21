@@ -1,0 +1,178 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }
+
+  
+  .container {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: blue;
+  }
+  
+  mat-card {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .main-card {
+    padding: 25px;
+    background-color: #ffffff;
+  }
+  
+  .header-image {
+    height: 54px;
+    width: 108.86%;
+    border-radius: 8px;
+  }
+  
+  .voucherName {
+    /* font-size: x-large;
+    font-weight: 500; */
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    font-style: normal;
+  }
+  
+  .expDate {
+    font-size: small;
+  }
+  
+  .btn-white {
+    width: 100%;
+    margin: 5px;
+    border: solid #ff9e17;
+    color: #ff9e17;
+  }
+  
+  .btn-orange {
+    width: 100%;
+    margin: 5px;
+    color: whitesmoke;
+    background-color: #ff9e17;
+  }
+  
+  mat-card-footer {
+    text-align: center;
+    align-self: center;
+  }
+  
+  .footer-text {
+    font-size: x-small;
+    color: #889a9c;
+  }
+  
+
+  
+  .hideElement {
+    display: none;
+  }
+  
+  .textVoucherDetail{
+    font-size: 11px;
+    color: #889a9c;
+  }
+  
+  
+  .card-body-show-voucher{
+    box-shadow: 0px 2px 8px rgb(92 79 61 / 20%);
+    border-radius: 35px 35px 35px 35px  ;
+    align-items: flex-start;
+    padding: 0px 0px;
+  ;
+  }
+  
+  
+  .label-back{
+    margin-left: 10px;
+        font-size: 20px;
+        color: #4D4D4D;
+        height: 10px;
+        font-weight: 400;
+  }
+  
+  .card-body-value{
+    background-color: white;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+  }
+  
+  .card-value-ppob{
+    width: 100%;box-shadow: 0px 2px 8px rgb(92 79 61 / 20%);
+      border-style: hidden;
+      border-radius: 8px;margin-top: 1.75;background-color: #FFF7EB;margin-top: 1.75rem
+  }
+  
+  .button-sk{
+    width: 100%;
+                margin: 5px;
+                color: #ff9e17;
+                background-color: #FFFFFF;
+                border-radius: 30px;height: 48px;
+                border-width: thin;
+                border-color: #ff9e17;
+                border-style: solid;
+  }
+  
+  .logo-partner{
+            width: 20rem;
+            padding: 4px 0 4px 0;
+            height: 170px;
+            margin-left:auto;
+            margin-right:auto;
+            /* margin-bottom:41px; */
+            margin-top: 1rem;
+  }
+
+
+
+  
+
+  
+  
+  .logo-brand-large{
+    margin-right: auto; 
+                  margin-left: auto;
+                  width: 114px;
+                  border-radius: 8px;
+                  height: 40px;
+                  
+  }
+
+
+  .footer-image {
+    /* background-image: url('./../../../../../assets/logo-opoint.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0%;
+    width: 111.43px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+  }
+
+
+  .bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+  }
+
+
+.mask1 {
+  -webkit-mask-image : url('../../assets/Vector.jpg');
+  mask-image: url('../../assets/Vector.jpg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;   
+  
+}
